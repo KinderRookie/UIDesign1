@@ -99,5 +99,6 @@ li {
   .intermediate,
   .Advanced {
     padding: 2%; /* Reduce the padding on mobile */
+    grid-column: 1;
   }
 }
