@@ -10,6 +10,14 @@ body {
   background-color: #cd3434;
 }
 
+h2 {
+  font-size: 3.5vw;
+}
+
+h3 {
+  font-size: 3vw;
+}
+
 #container {
   display: grid;
   place-items: center;
@@ -20,7 +28,9 @@ body {
   animation: glow 2s ease-in-out infinite alternate;
   padding: 5px 20px;
   border-radius: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: fit-content;
 }
 
 @keyframes glow {
@@ -40,7 +50,7 @@ body {
   position: sticky;
   top: 0;
 
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   text-align: center;
   text-shadow: rgb(1, 100, 100) 3px 3px 2px;
@@ -51,7 +61,7 @@ body {
 .elementary p,
 .Advanced p,
 .intermediate p {
-  font-size: 16px;
+  font-size: 2vw;
   font-weight: bold;
   font-style: italic;
   margin: 0;
@@ -60,9 +70,12 @@ body {
 
 li {
   list-style-type: circle;
+  font-size: 2vw;
 }
 #current_stack {
   display: grid;
+  place-items: center;
+  margin: 5%;
   grid-template-columns: 1fr; /* Display as a single column on mobile */
   gap: 20px; /* Add some gap between the columns */
 }
