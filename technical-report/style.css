@@ -89,7 +89,7 @@ li {
   background-color: rgb(93, 67, 197);
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1000px) {
   #current_stack {
     grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
     gap: 40px; /* Reduce the gap between items */
