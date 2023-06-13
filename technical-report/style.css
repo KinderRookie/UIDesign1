@@ -89,7 +89,7 @@ li {
   background-color: rgb(93, 67, 197);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   #current_stack {
     grid-template-columns: 1fr; /* Display as a single column on mobile */
     gap: 20px; /* Reduce the gap between items */
@@ -99,6 +99,5 @@ li {
   .intermediate,
   .Advanced {
     padding: 2%; /* Reduce the padding on mobile */
-    grid-column: 1;
   }
 }
