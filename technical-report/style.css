@@ -11,11 +11,11 @@ body {
 }
 
 h2 {
-  font-size: 3.5vw;
+  font-size: 5.5vw;
 }
 
 h3 {
-  font-size: 3vw;
+  font-size: 5vw;
 }
 
 #container {
@@ -29,8 +29,8 @@ h3 {
   padding: 5px 20px;
   border-radius: 20px;
   margin-bottom: 10px;
-  width: 100%;
-  max-width: fit-content;
+  width: 80%;
+  max-width: max-content;
 }
 
 @keyframes glow {
@@ -61,7 +61,7 @@ h3 {
 .elementary p,
 .Advanced p,
 .intermediate p {
-  font-size: 2vw;
+  font-size: 3.5vw;
   font-weight: bold;
   font-style: italic;
   margin: 0;
@@ -70,7 +70,7 @@ h3 {
 
 li {
   list-style-type: circle;
-  font-size: 2vw;
+  font-size: 3.5vw;
 }
 #current_stack {
   display: grid;
@@ -84,7 +84,7 @@ li {
 .intermediate,
 .Advanced {
   padding: 2%;
-  width: 100%; /* Ensure each item takes full width of its grid cell */
+  width: 80%; /* Ensure each item takes full width of its grid cell */
   max-width: fit-content;
   border-radius: 20px;
   box-shadow: #000000 0px 0px 10px;
@@ -99,7 +99,7 @@ li {
 }
 
 .Advanced {
-  background-color: rgb(93, 67, 197);
+  background-color: rgb(143, 116, 255);
 }
 
 @media (min-width: 1000px) {
@@ -112,5 +112,27 @@ li {
   .intermediate,
   .Advanced {
     padding: 5%; /* Reduce the padding on mobile */
+  }
+
+  .elementary p,
+  .Advanced p,
+  .intermediate p {
+    font-size: 2vw;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 3.5vw;
+  }
+
+  h3 {
+    font-size: 3vw;
+  }
+  li {
+    list-style-type: circle;
+    font-size: 2vw;
   }
 }
