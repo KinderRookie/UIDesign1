@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "body";
+  src: url();
+}
+
+body {
+  font-family: "Times New Roman";
+  line-height: 1.5;
+  color: #000000;
+  background-color: #cd3434;
+}
+
+h2 {
+  font-size: 5.5vw;
+}
+
+h3 {
+  font-size: 5vw;
+}
+
+#container {
+  display: grid;
+  place-items: center;
+}
+
+#current_issue {
+  background-color: aqua;
+  animation: glow 2s ease-in-out infinite alternate;
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  width: 80%;
+  max-width: max-content;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #fff;
+  }
+  50% {
+    box-shadow: 0 0 20px #fff;
+  }
+  100% {
+    box-shadow: 0 0 10px #fff;
+  }
+}
+
+#Title {
+  font-family: "Times New Roman";
+  position: sticky;
+  top: 0;
+
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: rgb(1, 100, 100) 3px 3px 2px;
+  margin: 0;
+  padding: 0;
+}
+
+.elementary p,
+.Advanced p,
+.intermediate p {
+  font-size: 3.5vw;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: circle;
+  font-size: 3.5vw;
+}
+#current_stack {
+  display: grid;
+  place-items: center;
+  margin: 5%;
+  grid-template-columns: 1fr; /* Display as a single column on mobile */
+  gap: 20px; /* Add some gap between the columns */
+}
+
+.elementary,
+.intermediate,
+.Advanced {
+  padding: 2%;
+  width: 80%; /* Ensure each item takes full width of its grid cell */
+  max-width: fit-content;
+  border-radius: 20px;
+  box-shadow: #000000 0px 0px 10px;
+}
+
+.elementary {
+  background-color: rgb(30, 191, 135);
+}
+
+.intermediate {
+  background-color: rgb(231, 231, 41);
+}
+
+.Advanced {
+  background-color: rgb(143, 116, 255);
+}
+
+@media (min-width: 1000px) {
+  #current_stack {
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+    gap: 40px; /* Reduce the gap between items */
+  }
+
+  .elementary,
+  .intermediate,
+  .Advanced {
+    padding: 5%; /* Reduce the padding on mobile */
+  }
+
+  .elementary p,
+  .Advanced p,
+  .intermediate p {
+    font-size: 2vw;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 3.5vw;
+  }
+
+  h3 {
+    font-size: 3vw;
+  }
+  li {
+    list-style-type: circle;
+    font-size: 2vw;
+  }
+}
